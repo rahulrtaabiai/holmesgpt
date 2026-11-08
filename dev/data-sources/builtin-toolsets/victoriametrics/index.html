@@ -1255,6 +1255,8 @@
       
         
       
+        
+      
     
     
     
@@ -1655,6 +1657,34 @@
     
   
     Other
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ai-providers/model-limits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models Missing from LiteLLM
   
 
     
@@ -4099,6 +4129,8 @@
       
         
       
+        
+      
     
     
     
@@ -4146,6 +4178,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../development/evaluations/history/results_20261028_100941/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ⚡ October 28, 2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -5782,7 +5842,7 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>When using the <strong>standalone Holmes Helm Chart</strong>, update your <code>values.yaml</code>:</p>
+<p>When using the <strong>standalone Holmes Helm Chart</strong>, merge this into your <code>values.yaml</code>, appending list entries (such as <code>additionalEnvVars</code>) to the lists already there:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">toolsets</span><span class="p">:</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">prometheus/metrics</span><span class="p">:</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -5795,7 +5855,7 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>When using the <strong>Robusta Helm Chart</strong> (which includes HolmesGPT), update your <code>generated_values.yaml</code>:</p>
+<p>When using the <strong>Robusta Helm Chart</strong> (which includes HolmesGPT), merge the keys under <code>holmes:</code> into the <code>holmes:</code> key of your <code>generated_values.yaml</code> (add one if it has none), appending list entries (such as <code>additionalEnvVars</code>) to the lists already there:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">holmes</span><span class="p">:</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">toolsets</span><span class="p">:</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">prometheus/metrics</span><span class="p">:</span>
